@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 def call() {
+    print "in groovy"
     stages {
         stage ('Compile Stage') {
             steps {
