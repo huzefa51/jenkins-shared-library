@@ -2,6 +2,8 @@
 
 def call(String name = 'human') {
   echo "Hello, ${name}."
+  pipeline {
+   agent any
    stages {
         stage ('Compile Stage') {
 
@@ -28,4 +30,5 @@ def call(String name = 'human') {
             }
         }
     }
+}
 }
