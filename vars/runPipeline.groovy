@@ -1,11 +1,11 @@
 #!/usr/bin/env groovy
+
 def call() {
-    print "in groovy"
+    echo "hello bro"
     stages {
         stage ('Compile Stage') {
             steps {
                 withMaven(maven : 'maven') {
-                    sh 'echo "inside maven"'
                     sh 'mvn clean compile'
                 }
             }
