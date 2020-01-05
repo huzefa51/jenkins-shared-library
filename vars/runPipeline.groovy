@@ -3,6 +3,7 @@ def call() {
         stage ('Compile Stage') {
             steps {
                 withMaven(maven : 'maven') {
+                    sh 'echo "inside maven"'
                     sh 'mvn clean compile'
                 }
             }
