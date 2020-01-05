@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-def call() {
-  echo "Hello huz"
+def call(String name) {
+  echo "Hello $name"
   pipeline {
    agent any
    stages {
